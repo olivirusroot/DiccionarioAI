@@ -1688,7 +1688,248 @@ const dictionaryData = [
     complexity: 2,
     relatedTerms: ["react", "desarrollo-web", "frontend"],
     tags: ["web", "frontend", "desarrollo"]
+  },
+    {
+    id: "stdio",
+    term: "STDIO (Standard Input/Output)",
+    shortDefinition: "Sistema estándar para entrada y salida de datos en aplicaciones de IA.",
+    fullDefinition: "Conjunto de flujos estándar para la entrada, salida y error en sistemas informáticos, utilizado en aplicaciones de IA para gestionar la comunicación entre componentes, registrar eventos y facilitar la interacción con modelos a través de interfaces de línea de comandos.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["cli", "logging", "streams"],
+    tags: ["comunicación", "datos", "interfaz"]
+  },
+  {
+    id: "sse",
+    term: "SSE (Server-Sent Events)",
+    shortDefinition: "Tecnología para transmisión de eventos desde servidores a clientes en aplicaciones de IA.",
+    fullDefinition: "Tecnología de comunicación web que permite a los servidores enviar actualizaciones a los clientes de forma asíncrona, ampliamente utilizada en aplicaciones de IA para transmitir resultados de inferencia en tiempo real, actualizaciones de modelos y notificaciones de eventos sin necesidad de polling constante.",
+    category: "tecnicas",
+    complexity: 2,
+    relatedTerms: ["streaming", "api", "tiempo-real"],
+    tags: ["comunicación", "tiempo real", "web"]
+  },
+  {
+    id: "clk-encoder",
+    term: "CLK (Encoder)",
+    shortDefinition: "Componente que transforma datos de entrada en representaciones procesables por modelos de IA.",
+    fullDefinition: "Componente especializado en arquitecturas de IA que transforma datos de entrada en representaciones vectoriales o tokens que pueden ser procesados eficientemente por modelos de lenguaje o multimodales, aplicando técnicas de normalización, tokenización y codificación.",
+    category: "conceptos",
+    complexity: 3,
+    relatedTerms: ["tokenizacion", "embedding", "codificador"],
+    tags: ["procesamiento", "transformación", "datos"]
+  },
+  {
+    id: "langflow",
+    term: "LangFlow",
+    shortDefinition: "Interfaz visual para diseñar flujos de trabajo con LangChain.",
+    fullDefinition: "Aplicación de código abierto que proporciona una interfaz visual tipo diagrama de flujo para diseñar, desarrollar y depurar flujos de trabajo basados en LangChain, facilitando la creación de aplicaciones complejas con modelos de lenguaje sin necesidad de escribir código extenso.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["langchain", "flowise", "flujo-trabajo"],
+    tags: ["visual", "desarrollo", "flujos"]
+  },
+  {
+    id: "sdk",
+    term: "SDK (Kit de Desarrollo de Software)",
+    shortDefinition: "Conjunto de herramientas para desarrollar aplicaciones con modelos de IA.",
+    fullDefinition: "Conjunto de herramientas, bibliotecas, documentación y ejemplos que facilitan el desarrollo de aplicaciones que integran modelos de IA específicos, proporcionando interfaces programáticas, utilidades y abstracciones que simplifican la interacción con las APIs y capacidades subyacentes.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["api", "libreria", "desarrollo-aplicaciones"],
+    tags: ["desarrollo", "herramientas", "integración"]
+  },
+  {
+    id: "npm",
+    term: "NPM (Node Package Manager)",
+    shortDefinition: "Gestor de paquetes para JavaScript utilizado en desarrollo de aplicaciones de IA.",
+    fullDefinition: "Sistema de gestión de paquetes para el ecosistema JavaScript que facilita la instalación, actualización y gestión de dependencias en proyectos de desarrollo, ampliamente utilizado para integrar bibliotecas de IA, interfaces de usuario y herramientas de procesamiento en aplicaciones web y de servidor.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["node-js", "javascript", "dependencias"],
+    tags: ["paquetes", "javascript", "desarrollo"]
+  },
+  {
+    id: "npx",
+    term: "NPX",
+    shortDefinition: "Herramienta para ejecutar paquetes de Node.js sin instalación permanente.",
+    fullDefinition: "Utilidad incluida con NPM que permite ejecutar paquetes de Node.js sin necesidad de instalarlos globalmente, facilitando el uso de herramientas de línea de comandos, generadores de proyectos y scripts de IA sin contaminar el entorno de desarrollo global.",
+    category: "aplicaciones",
+    complexity: 1,
+    relatedTerms: ["npm", "node-js", "cli"],
+    tags: ["ejecución", "javascript", "herramientas"]
+  },
+  {
+    id: "sample",
+    term: "Sample (Muestreo)",
+    shortDefinition: "Técnica para generar contenido a partir de distribuciones de probabilidad en modelos de IA.",
+    fullDefinition: "Proceso mediante el cual los modelos generativos producen contenido seleccionando elementos de una distribución de probabilidad, con parámetros como temperatura y top-k que controlan la aleatoriedad y diversidad de las salidas generadas.",
+    category: "tecnicas",
+    complexity: 2,
+    relatedTerms: ["temperatura", "top-k", "generacion-texto"],
+    tags: ["generación", "probabilidad", "diversidad"]
+  },
+  {
+    id: "sandbox",
+    term: "Sandbox",
+    shortDefinition: "Entorno aislado y seguro para experimentar con modelos de IA.",
+    fullDefinition: "Entorno de ejecución aislado y controlado que permite experimentar con modelos de IA, probar prompts y desarrollar aplicaciones sin riesgos para los sistemas de producción, proporcionando límites de recursos, restricciones de acceso y mecanismos de seguridad.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["seguridad-ia", "desarrollo", "aislamiento"],
+    tags: ["seguridad", "experimentación", "desarrollo"]
+  },
+  {
+    id: "playground",
+    term: "Playground",
+    shortDefinition: "Interfaz interactiva para experimentar con modelos de IA sin programación.",
+    fullDefinition: "Entorno web interactivo que permite a usuarios experimentar con modelos de IA mediante una interfaz gráfica, ajustando parámetros, probando diferentes prompts y visualizando resultados sin necesidad de escribir código o configurar infraestructura.",
+    category: "aplicaciones",
+    complexity: 1,
+    relatedTerms: ["sandbox", "prompt-engineering", "interfaz-usuario"],
+    tags: ["experimentación", "interfaz", "accesibilidad"]
+  },
+  {
+    id: "uv",
+    term: "UV",
+    shortDefinition: "Instalador y gestor de paquetes Python optimizado para entornos de IA.",
+    fullDefinition: "Herramienta moderna para la instalación y gestión de paquetes Python, diseñada como reemplazo más rápido y eficiente de pip, especialmente útil en entornos de desarrollo de IA donde se requiere gestionar numerosas dependencias complejas con mejor rendimiento.",
+    category: "aplicaciones",
+    complexity: 1,
+    relatedTerms: ["python", "pip", "dependencias"],
+    tags: ["paquetes", "python", "optimización"]
+  },
+  {
+    id: "uvicorn",
+    term: "Uvicorn",
+    shortDefinition: "Servidor ASGI de alto rendimiento para aplicaciones web de IA.",
+    fullDefinition: "Servidor web ASGI (Asynchronous Server Gateway Interface) de alto rendimiento para Python, utilizado para desplegar aplicaciones web basadas en IA, especialmente aquellas desarrolladas con FastAPI, permitiendo manejar múltiples solicitudes concurrentes con baja latencia.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["fastapi", "asgi", "python"],
+    tags: ["servidor", "web", "asíncrono"]
+  },
+  {
+    id: "fastmcp",
+    term: "FastMCP",
+    shortDefinition: "Framework para crear servidores MCP (Model Control Protocol) de alto rendimiento.",
+    fullDefinition: "Framework especializado para desarrollar servidores MCP (Model Control Protocol) de alto rendimiento, facilitando la comunicación estandarizada entre aplicaciones cliente y modelos de IA, con soporte para streaming, gestión de contexto y optimización de recursos.",
+    category: "aplicaciones",
+    complexity: 3,
+    relatedTerms: ["mcp", "api", "streaming"],
+    tags: ["protocolo", "servidor", "modelos"]
+  },
+  {
+    id: "fastapi",
+    term: "FastAPI",
+    shortDefinition: "Framework web de Python para crear APIs de alto rendimiento para servicios de IA.",
+    fullDefinition: "Framework moderno de Python para desarrollar APIs web de alto rendimiento, con soporte nativo para operaciones asíncronas, validación automática de datos y documentación interactiva, ampliamente utilizado para crear interfaces de programación para modelos y servicios de IA.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["python", "api", "uvicorn"],
+    tags: ["web", "api", "desarrollo"]
+  },
+  {
+    id: "parametros-1b",
+    term: "Parámetros (1B)",
+    shortDefinition: "Modelos de IA con aproximadamente mil millones de parámetros ajustables.",
+    fullDefinition: "Categoría de modelos de inteligencia artificial que contienen aproximadamente mil millones (1B) de parámetros ajustables, representando un equilibrio entre capacidad y eficiencia, adecuados para despliegue en dispositivos con recursos moderados mientras mantienen competencia en diversas tareas.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["parametros", "modelo-pequeno", "eficiencia-computacional"],
+    tags: ["parámetros", "tamaño", "eficiencia"]
+  },
+  {
+    id: "parametros-8b",
+    term: "Parámetros (8B)",
+    shortDefinition: "Modelos de IA con aproximadamente ocho mil millones de parámetros ajustables.",
+    fullDefinition: "Categoría de modelos de inteligencia artificial que contienen aproximadamente ocho mil millones (8B) de parámetros ajustables, ofreciendo capacidades avanzadas mientras mantienen requisitos computacionales moderados, posicionándose como alternativas eficientes a modelos más grandes para muchas aplicaciones prácticas.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["parametros", "modelo-mediano", "llm"],
+    tags: ["parámetros", "tamaño", "capacidad"]
+  },
+  {
+    id: "pesos",
+    term: "Pesos",
+    shortDefinition: "Valores numéricos que determinan la influencia de las conexiones en redes neuronales.",
+    fullDefinition: "Valores numéricos ajustables que determinan la fuerza o influencia de las conexiones entre neuronas en redes neuronales, modificados durante el entrenamiento para minimizar el error de predicción y constituyen la esencia del conocimiento adquirido por el modelo.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["entrenamiento", "red-neuronal", "gradiente-descendente"],
+    tags: ["aprendizaje", "conexiones", "ajuste"]
+  },
+  {
+    id: "path",
+    term: "Path",
+    shortDefinition: "Ruta de acceso a archivos y recursos utilizados por sistemas de IA.",
+    fullDefinition: "Secuencia de directorios que especifica la ubicación de archivos, modelos, datos y otros recursos en un sistema informático, fundamental para la configuración y funcionamiento de aplicaciones de IA que necesitan acceder a modelos pre-entrenados, conjuntos de datos y archivos de configuración.",
+    category: "conceptos",
+    complexity: 1,
+    relatedTerms: ["sistema-archivos", "configuracion", "variable-entorno"],
+    tags: ["archivos", "ubicación", "sistema"]
+  },
+  {
+    id: "variable-entorno",
+    term: "Variable de Entorno",
+    shortDefinition: "Valor dinámico que configura el comportamiento de aplicaciones de IA.",
+    fullDefinition: "Valor dinámico almacenado en el sistema operativo que puede afectar el comportamiento de los procesos en ejecución, utilizado en aplicaciones de IA para configurar parámetros como claves de API, rutas de modelos, modos de operación y recursos disponibles sin modificar el código fuente.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["configuracion", "path", "env-file"],
+    tags: ["configuración", "sistema", "personalización"]
+  },
+  {
+    id: "asistente",
+    term: "Asistente",
+    shortDefinition: "Sistema de IA conversacional diseñado para ayudar a usuarios con tareas específicas.",
+    fullDefinition: "Sistema de inteligencia artificial conversacional diseñado para interactuar con usuarios de manera natural, proporcionando información, realizando tareas y ofreciendo asistencia en dominios específicos, generalmente con personalidad definida, memoria de conversación y capacidades adaptadas a su propósito.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["chatbot", "llm", "agente"],
+    tags: ["conversacional", "asistencia", "interacción"]
+  },
+  {
+    id: "agente",
+    term: "Agente",
+    shortDefinition: "Sistema de IA autónomo capaz de percibir, razonar y actuar para lograr objetivos.",
+    fullDefinition: "Sistema de inteligencia artificial autónomo que puede percibir su entorno, razonar sobre la información disponible, planificar acciones y ejecutarlas para lograr objetivos específicos, combinando modelos de lenguaje con herramientas externas y capacidad de toma de decisiones.",
+    category: "conceptos",
+    complexity: 3,
+    relatedTerms: ["asistente", "herramientas-ia", "planificacion"],
+    tags: ["autonomía", "acción", "decisión"]
+  },
+  {
+    id: "memory-buffer",
+    term: "Memory Buffer",
+    shortDefinition: "Componente que almacena y gestiona el historial de interacciones en sistemas de IA.",
+    fullDefinition: "Componente de sistemas de IA conversacionales o agentes que almacena y gestiona el historial de interacciones, permitiendo mantener contexto a lo largo del tiempo, recordar información relevante y proporcionar respuestas coherentes basadas en conversaciones previas.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["contexto", "conversacion", "agente"],
+    tags: ["memoria", "contexto", "historial"]
+  },
+  {
+    id: "env-file",
+    term: ".env",
+    shortDefinition: "Archivo de configuración para almacenar variables de entorno en aplicaciones de IA.",
+    fullDefinition: "Archivo de texto plano utilizado para almacenar variables de entorno como pares clave-valor, permitiendo configurar aplicaciones de IA sin exponer información sensible en el código fuente, facilitando la gestión de diferentes entornos y la protección de credenciales de API.",
+    category: "conceptos",
+    complexity: 1,
+    relatedTerms: ["variable-entorno", "configuracion", "seguridad"],
+    tags: ["configuración", "seguridad", "desarrollo"]
+  },
+  {
+    id: "pypi",
+    term: "PyPI",
+    shortDefinition: "Repositorio oficial de paquetes de Python para desarrollo de IA.",
+    fullDefinition: "Python Package Index, repositorio oficial de software para el lenguaje de programación Python que aloja miles de bibliotecas y herramientas, muchas específicamente diseñadas para inteligencia artificial, aprendizaje automático y ciencia de datos, facilitando su instalación mediante pip o herramientas similares.",
+    category: "aplicaciones",
+    complexity: 1,
+    relatedTerms: ["python", "pip", "libreria"],
+    tags: ["paquetes", "distribución", "bibliotecas"]
   }
+
 ];
 const categories = [
   { id: "modelos", name: "Modelos", color: "var(--cat-modelos)", description: "Arquitecturas y tipos específicos de sistemas de IA generativa." },
