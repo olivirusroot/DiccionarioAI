@@ -600,307 +600,316 @@ const dictionaryData = [
     tags: ["precisión", "confiabilidad"]
   },
   {
-    id: "gemas",
-    term: "Gemas (Gems)",
-    shortDefinition: "Modelos de lenguaje especializados de Google para tareas específicas (ecosistema Gemini).",
-    fullDefinition: "En el contexto de Google, modelos de lenguaje especializados diseñados para tareas específicas dentro del ecosistema Gemini.",
-    category: "modelos",
-    complexity: 2,
-    relatedTerms: ["gemini", "google", "fine-tuning"],
-    tags: ["google", "modelo", "especialización"]
-  },
-  {
-    id: "embedding-contextualizado",
-    term: "Incorporación de Lenguaje Contextualizado",
-    shortDefinition: "Embedding que comprende palabras considerando su contexto específico.",
-    fullDefinition: "Tipo de embedding que comprende palabras y frases considerando su contexto específico, captando matices semánticos complejos.",
-    category: "conceptos",
-    complexity: 3,
-    relatedTerms: ["embedding", "bert", "nlp"],
-    tags: ["nlp", "representación", "semántica"]
-  },
-  {
-    id: "jailbreaking",
-    term: "Jailbreaking",
-    shortDefinition: "Técnicas para eludir las salvaguardas éticas y restricciones de seguridad en modelos IA.",
-    fullDefinition: "Técnicas utilizadas para eludir las salvaguardas éticas y restricciones de seguridad implementadas en modelos de IA generativa.",
+    id: "mcp",
+    term: "MCP (Model Control Protocol)",
+    shortDefinition: "Protocolo estándar para la comunicación entre aplicaciones y modelos de IA.",
+    fullDefinition: "Protocolo estándar que define cómo las aplicaciones pueden comunicarse con modelos de IA, permitiendo una integración consistente y flexible entre diferentes sistemas y modelos.",
     category: "conceptos",
     complexity: 2,
-    relatedTerms: ["seguridad", "alineacion-ia", "prompt-engineering"],
-    tags: ["seguridad", "riesgo"]
+    relatedTerms: ["llm", "llm-agents", "api"],
+    tags: ["integración", "protocolo", "estándar"]
   },
   {
-    id: "tensor-cores",
-    term: "NVIDIA Tensor Cores",
-    shortDefinition: "Unidades de procesamiento en GPUs NVIDIA para acelerar operaciones de redes neuronales.",
-    fullDefinition: "Unidades de procesamiento especializadas en GPUs de NVIDIA diseñadas específicamente para acelerar operaciones de álgebra matricial utilizadas en redes neuronales.",
-    category: "conceptos",
-    complexity: 3,
-    relatedTerms: ["gpu", "aprendizaje-profundo", "nvidia"],
-    tags: ["hardware", "aceleración"]
-  },
-  {
-    id: "chatear",
-    term: "Chatear",
-    shortDefinition: "Diálogo de ida y vuelta con un sistema de IA, donde la interacción previa es contexto.",
-    fullDefinition: "Contenido de un diálogo de ida y vuelta con un sistema de IA, donde la interacción anterior se convierte en contexto para las partes posteriores de la conversación.",
-    category: "conceptos",
-    complexity: 1,
-    relatedTerms: ["chatgpt", "memoria-de-contexto"],
-    tags: ["interacción", "conversacional"]
-  },
-  {
-    id: "evals",
-    term: "Evals",
-    shortDefinition: "Abreviatura de evaluaciones, especialmente para medir rendimiento de LLMs.",
-    fullDefinition: "Abreviatura de evaluaciones, especialmente en el contexto de medir el rendimiento y la calidad de los modelos de lenguaje grandes.",
-    category: "conceptos",
-    complexity: 1,
-    relatedTerms: ["evaluacion-automatica", "perplexity"],
-    tags: ["evaluación", "jerga"]
-  },
-  {
-    id: "midjourney",
-    term: "Midjourney",
-    shortDefinition: "Herramienta de IA generativa especializada en crear imágenes artísticas desde texto.",
-    fullDefinition: "Herramienta de IA generativa especializada en crear imágenes artísticas de alta calidad a partir de descripciones textuales.",
+    id: "ag-ui",
+    term: "AG-UI (Agent User Interface)",
+    shortDefinition: "Interfaz diseñada específicamente para la interacción con agentes de IA.",
+    fullDefinition: "Interfaz de usuario especializada para facilitar la interacción entre humanos y agentes de IA, optimizada para mostrar el razonamiento, acciones y resultados del agente de manera comprensible.",
     category: "aplicaciones",
-    complexity: 1,
-    relatedTerms: ["dall-e", "stable-diffusion", "texto-a-imagen"],
-    tags: ["imágenes", "arte", "aplicaciones"]
-  },
-  {
-    id: "anthropic",
-    term: "Anthropic",
-    shortDefinition: "Empresa de investigación en IA que desarrolló Claude, enfocada en seguridad.",
-    fullDefinition: "Empresa de investigación en IA que desarrolló Claude, enfocada en la seguridad y alineación de sistemas de IA avanzados.",
-    category: "empresas",
     complexity: 2,
-    relatedTerms: ["claude", "seguridad", "alineacion-ia"],
-    tags: ["empresa", "investigación", "seguridad"]
-  },
-  {
-    id: "bard",
-    term: "Bard",
-    shortDefinition: "Asistente de IA conversacional de Google, predecesor de Gemini.",
-    fullDefinition: "Asistente de IA conversacional desarrollado por Google, predecesor de Gemini, diseñado para interactuar con usuarios y proporcionar información.",
-    category: "aplicaciones",
-    complexity: 1,
-    relatedTerms: ["google", "gemini", "chatgpt"],
-    tags: ["google", "chatbot", "histórico"]
-  },
-  {
-    id: "copilot",
-    term: "Copilot",
-    shortDefinition: "Asistente de IA de Microsoft/GitHub que ayuda a escribir código.",
-    fullDefinition: "Asistente de IA desarrollado por Microsoft y GitHub que ayuda a los programadores a escribir código sugiriendo líneas o funciones completas.",
-    category: "aplicaciones",
-    complexity: 1,
-    relatedTerms: ["microsoft", "github", "codigo"],
-    tags: ["microsoft", "desarrollo", "código"]
-  },
-  {
-    id: "hugging-face",
-    term: "Hugging Face",
-    shortDefinition: "Plataforma con herramientas, modelos y datasets para IA, especialmente NLP.",
-    fullDefinition: "Plataforma que proporciona herramientas, modelos y datasets para aplicaciones de IA, especialmente en procesamiento de lenguaje natural.",
-    category: "empresas",
-    complexity: 2,
-    relatedTerms: ["nlp", "modelo-base", "código-abierto"],
-    tags: ["plataforma", "comunidad", "nlp"]
-  },
-  {
-    id: "whisper",
-    term: "Whisper",
-    shortDefinition: "Modelo de reconocimiento de voz de OpenAI para transcribir y traducir audio.",
-    fullDefinition: "Modelo de reconocimiento de voz desarrollado por OpenAI que puede transcribir y traducir audio en múltiples idiomas con alta precisión.",
-    category: "modelos",
-    complexity: 2,
-    relatedTerms: ["openai", "reconocimiento-voz", "audio"],
-    tags: ["openai", "audio", "transcripción"]
-  },
-  {
-    id: "sora",
-    term: "Sora",
-    shortDefinition: "Modelo de IA generativa de OpenAI capaz de crear videos realistas desde texto.",
-    fullDefinition: "Modelo de IA generativa de OpenAI capaz de crear videos realistas a partir de descripciones textuales, representando un avance en la generación de contenido visual dinámico.",
-    category: "modelos",
-    complexity: 3,
-    relatedTerms: ["openai", "video", "modelo-multimodal"],
-    tags: ["openai", "video", "texto-a-video"]
-  },
-  {
-    id: "llama",
-    term: "Llama",
-    shortDefinition: "Familia de LLMs de código abierto desarrollados por Meta.",
-    fullDefinition: "Familia de modelos de lenguaje grandes de código abierto desarrollados por Meta (anteriormente Facebook), diseñados para ser más accesibles para investigadores y desarrolladores.",
-    category: "modelos",
-    complexity: 2,
-    relatedTerms: ["meta", "llm", "código-abierto"],
-    tags: ["meta", "modelo", "código-abierto"]
-  },
-  {
-    id: "mistral",
-    term: "Mistral",
-    shortDefinition: "Modelo de lenguaje de código abierto eficiente y potente.",
-    fullDefinition: "Modelo de lenguaje de código abierto que ofrece capacidades avanzadas con requisitos computacionales más eficientes que otros LLMs de tamaño similar.",
-    category: "modelos",
-    complexity: 2,
-    relatedTerms: ["llm", "código-abierto", "eficiencia"],
-    tags: ["modelo", "código-abierto", "eficiencia"]
-  },
-  {
-    id: "imagen-latente",
-    term: "Imagen Latente",
-    shortDefinition: "Representación comprimida de una imagen en el espacio latente de un modelo.",
-    fullDefinition: "Representación comprimida de una imagen en el espacio latente de un modelo generativo, que captura características esenciales de forma matemática.",
-    category: "conceptos",
-    complexity: 3,
-    relatedTerms: ["espacio-latente", "difusion", "vae"],
-    tags: ["imágenes", "representación"]
+    relatedTerms: ["llm-agents", "manus", "ui-ux"],
+    tags: ["interfaz", "agentes", "interacción"]
   },
   {
     id: "alineacion-ia",
     term: "Alineación de IA",
-    shortDefinition: "Asegurar que los sistemas de IA actúen según las intenciones y valores humanos.",
-    fullDefinition: "Proceso de asegurar que los sistemas de IA actúen de acuerdo con las intenciones y valores humanos, minimizando comportamientos no deseados.",
+    shortDefinition: "Proceso de asegurar que los sistemas de IA actúen según valores e intenciones humanas.",
+    fullDefinition: "Campo de investigación y conjunto de técnicas enfocadas en asegurar que los sistemas de IA actúen de acuerdo con los valores e intenciones humanas, abordando problemas de seguridad y ética.",
     category: "conceptos",
     complexity: 2,
-    relatedTerms: ["rlhf", "seguridad", "etica"],
-    tags: ["ética", "seguridad", "control"]
+    relatedTerms: ["rlhf", "ia-segura", "etica-ia"],
+    tags: ["seguridad", "ética", "valores"]
+  },
+  {
+    id: "ia-segura",
+    term: "IA Segura",
+    shortDefinition: "Enfoque para desarrollar sistemas de IA que minimicen riesgos y daños potenciales.",
+    fullDefinition: "Enfoque para el desarrollo de sistemas de IA que busca minimizar riesgos y daños potenciales, asegurando que los sistemas sean robustos, confiables y alineados con valores humanos.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["alineacion-ia", "etica-ia", "rlhf"],
+    tags: ["seguridad", "riesgo", "robustez"]
+  },
+  {
+    id: "etica-ia",
+    term: "Ética en IA",
+    shortDefinition: "Principios morales y consideraciones éticas aplicadas al desarrollo y uso de IA.",
+    fullDefinition: "Campo que estudia los principios morales y consideraciones éticas aplicadas al desarrollo, implementación y uso de sistemas de inteligencia artificial.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["alineacion-ia", "ia-segura", "sesgo-algoritmico"],
+    tags: ["ética", "valores", "responsabilidad"]
   },
   {
     id: "sesgo-algoritmico",
     term: "Sesgo Algorítmico",
-    shortDefinition: "Tendencia sistemática de un modelo a producir resultados injustos.",
-    fullDefinition: "Tendencia sistemática de un modelo de IA a producir resultados que favorecen o perjudican injustamente a ciertos grupos, reflejando sesgos presentes en los datos de entrenamiento.",
+    shortDefinition: "Tendencia sistemática de un algoritmo a favorecer ciertos resultados injustamente.",
+    fullDefinition: "Tendencia sistemática de un algoritmo o modelo de IA a favorecer ciertos resultados o grupos sobre otros de manera injusta, reflejando y potencialmente amplificando sesgos presentes en los datos de entrenamiento.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["etica-ia", "equidad-algoritmica", "datos-entrenamiento"],
+    tags: ["ética", "equidad", "riesgo"]
+  },
+  {
+    id: "equidad-algoritmica",
+    term: "Equidad Algorítmica",
+    shortDefinition: "Principio de diseñar algoritmos que traten a todos los grupos de manera justa.",
+    fullDefinition: "Principio y conjunto de técnicas para diseñar algoritmos y sistemas de IA que traten a todos los grupos demográficos de manera justa, evitando discriminación y sesgos injustos.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["sesgo-algoritmico", "etica-ia", "alineacion-ia"],
+    tags: ["ética", "equidad", "justicia"]
+  },
+  {
+    id: "api",
+    term: "API (Application Programming Interface)",
+    shortDefinition: "Conjunto de reglas que permite a diferentes aplicaciones comunicarse entre sí.",
+    fullDefinition: "Conjunto de reglas, protocolos y herramientas que permite a diferentes aplicaciones de software comunicarse entre sí, facilitando la integración de servicios de IA en aplicaciones existentes.",
     category: "conceptos",
     complexity: 1,
-    relatedTerms: ["etica", "datos", "entrenamiento"],
-    tags: ["ética", "riesgo", "justicia"]
+    relatedTerms: ["mcp", "rest-api", "integracion"],
+    tags: ["desarrollo", "integración", "comunicación"]
+  },
+  {
+    id: "rest-api",
+    term: "REST API",
+    shortDefinition: "Estilo arquitectónico para diseñar servicios web basados en HTTP.",
+    fullDefinition: "Estilo arquitectónico para diseñar servicios web que utiliza métodos HTTP estándar y es ampliamente utilizado para crear APIs que permiten acceder a servicios de IA.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["api", "http", "integracion"],
+    tags: ["desarrollo", "web", "comunicación"]
+  },
+  {
+    id: "integracion",
+    term: "Integración de IA",
+    shortDefinition: "Proceso de incorporar capacidades de IA en aplicaciones y sistemas existentes.",
+    fullDefinition: "Proceso de incorporar capacidades de inteligencia artificial en aplicaciones, productos y sistemas existentes para mejorar su funcionalidad y crear nuevas experiencias de usuario.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["api", "mcp", "llm-agents"],
+    tags: ["desarrollo", "implementación", "aplicaciones"]
+  },
+  {
+    id: "ui-ux",
+    term: "UI/UX para IA",
+    shortDefinition: "Diseño de interfaces y experiencias de usuario específicas para sistemas de IA.",
+    fullDefinition: "Disciplina que se enfoca en el diseño de interfaces y experiencias de usuario específicamente adaptadas para sistemas de IA, considerando aspectos como transparencia, control del usuario y comunicación de capacidades y limitaciones.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["ag-ui", "transparencia-ia", "interaccion-humano-ia"],
+    tags: ["diseño", "interfaz", "experiencia"]
+  },
+  {
+    id: "transparencia-ia",
+    term: "Transparencia en IA",
+    shortDefinition: "Principio de hacer comprensibles los procesos y decisiones de los sistemas de IA.",
+    fullDefinition: "Principio que busca hacer comprensibles y explicables los procesos internos y decisiones de los sistemas de IA para usuarios, desarrolladores y reguladores.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["explicabilidad", "ui-ux", "etica-ia"],
+    tags: ["ética", "confianza", "explicabilidad"]
+  },
+  {
+    id: "explicabilidad",
+    term: "Explicabilidad (XAI)",
+    shortDefinition: "Capacidad de un sistema de IA para explicar sus decisiones de manera comprensible.",
+    fullDefinition: "Capacidad de un sistema de inteligencia artificial para explicar sus decisiones, predicciones o comportamientos de manera comprensible para los humanos, facilitando la confianza y la supervisión.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["transparencia-ia", "interpretabilidad", "caja-negra"],
+    tags: ["transparencia", "confianza", "interpretación"]
   },
   {
     id: "interpretabilidad",
     term: "Interpretabilidad",
-    shortDefinition: "Grado en que se puede entender y explicar el funcionamiento interno de un modelo IA.",
-    fullDefinition: "Grado en que se puede entender y explicar el funcionamiento interno y las decisiones de un modelo de IA, crucial para aplicaciones críticas y confianza en los sistemas.",
+    shortDefinition: "Grado en que un humano puede entender la causa de una decisión de IA.",
+    fullDefinition: "Grado en que un humano puede entender la causa de una decisión tomada por un modelo de IA, relacionado con la transparencia del modelo y sus mecanismos internos.",
     category: "conceptos",
     complexity: 2,
-    relatedTerms: ["explicabilidad", "confianza", "etica"],
-    tags: ["ética", "transparencia"]
+    relatedTerms: ["explicabilidad", "transparencia-ia", "caja-negra"],
+    tags: ["transparencia", "comprensión", "análisis"]
   },
   {
-    id: "prompt",
-    term: "Prompt",
-    shortDefinition: "Instrucción o entrada de texto proporcionada a un modelo generativo para guiar su salida.",
-    fullDefinition: "La instrucción o entrada de texto que se proporciona a un modelo de lenguaje grande (LLM) u otro modelo generativo para condicionar su respuesta o salida. Diseñar prompts efectivos es clave en la ingeniería de prompts.",
+    id: "caja-negra",
+    term: "Caja Negra (Black Box)",
+    shortDefinition: "Sistema de IA cuyo funcionamiento interno es difícil o imposible de interpretar.",
+    fullDefinition: "Sistema de inteligencia artificial cuyo funcionamiento interno es difícil o imposible de interpretar debido a su complejidad, opacidad o propiedad intelectual protegida.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["explicabilidad", "interpretabilidad", "transparencia-ia"],
+    tags: ["opacidad", "complejidad", "riesgo"]
+  },
+  {
+    id: "interaccion-humano-ia",
+    term: "Interacción Humano-IA",
+    shortDefinition: "Estudio de cómo los humanos y los sistemas de IA se comunican y colaboran.",
+    fullDefinition: "Campo interdisciplinario que estudia cómo los humanos y los sistemas de inteligencia artificial se comunican, colaboran y coexisten, buscando optimizar esta relación para beneficio mutuo.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["ui-ux", "ag-ui", "colaboracion-humano-ia"],
+    tags: ["interacción", "colaboración", "diseño"]
+  },
+  {
+    id: "colaboracion-humano-ia",
+    term: "Colaboración Humano-IA",
+    shortDefinition: "Enfoque donde humanos y sistemas de IA trabajan juntos complementando capacidades.",
+    fullDefinition: "Enfoque donde humanos y sistemas de inteligencia artificial trabajan juntos en tareas complejas, complementando sus respectivas capacidades y limitaciones para lograr mejores resultados que por separado.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["interaccion-humano-ia", "augmented-intelligence", "ia-centrada-humano"],
+    tags: ["colaboración", "sinergia", "trabajo"]
+  },
+  {
+    id: "augmented-intelligence",
+    term: "Inteligencia Aumentada",
+    shortDefinition: "Uso de IA para mejorar las capacidades humanas en lugar de reemplazarlas.",
+    fullDefinition: "Enfoque que utiliza la inteligencia artificial para mejorar y amplificar las capacidades cognitivas humanas en lugar de reemplazarlas, enfatizando la colaboración entre humanos y máquinas.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["colaboracion-humano-ia", "ia-centrada-humano", "interaccion-humano-ia"],
+    tags: ["colaboración", "potenciación", "asistencia"]
+  },
+  {
+    id: "ia-centrada-humano",
+    term: "IA Centrada en el Humano",
+    shortDefinition: "Enfoque de diseño de IA que prioriza las necesidades y valores humanos.",
+    fullDefinition: "Filosofía y metodología de diseño de sistemas de IA que prioriza las necesidades, valores y bienestar humanos, asegurando que la tecnología sirva y empodere a las personas.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["etica-ia", "augmented-intelligence", "colaboracion-humano-ia"],
+    tags: ["diseño", "valores", "humanismo"]
+  },
+  {
+    id: "llama",
+    term: "Llama",
+    shortDefinition: "Familia de modelos de lenguaje de código abierto desarrollados por Meta.",
+    fullDefinition: "Familia de modelos de lenguaje de gran escala y código abierto desarrollados por Meta (anteriormente Facebook), diseñados para ser eficientes y accesibles para investigación y aplicaciones.",
+    category: "modelos",
+    complexity: 2,
+    relatedTerms: ["llm", "meta", "codigo-abierto"],
+    tags: ["modelo", "código-abierto", "meta"]
+  },
+  {
+    id: "codigo-abierto",
+    term: "IA de Código Abierto",
+    shortDefinition: "Modelos y herramientas de IA disponibles públicamente con licencias permisivas.",
+    fullDefinition: "Modelos, herramientas y frameworks de inteligencia artificial que están disponibles públicamente con licencias que permiten su uso, modificación y distribución libre, democratizando el acceso a la tecnología.",
     category: "conceptos",
     complexity: 1,
-    relatedTerms: ["prompt-engineering", "in-context-learning"],
-    tags: ["interacción", "entrada"]
+    relatedTerms: ["llama", "stable-diffusion", "huggingface"],
+    tags: ["accesibilidad", "comunidad", "democratización"]
+  },
+  {
+    id: "huggingface",
+    term: "Hugging Face",
+    shortDefinition: "Plataforma y comunidad para compartir modelos de IA y herramientas de NLP.",
+    fullDefinition: "Plataforma y comunidad que facilita el desarrollo y compartición de modelos de IA, especialmente en procesamiento de lenguaje natural, con miles de modelos preentrenados disponibles públicamente.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["codigo-abierto", "transformers", "nlp"],
+    tags: ["plataforma", "comunidad", "recursos"]
+  },
+  {
+    id: "transformers",
+    term: "Transformers (Biblioteca)",
+    shortDefinition: "Biblioteca de código abierto para trabajar con modelos basados en transformers.",
+    fullDefinition: "Biblioteca de código abierto desarrollada por Hugging Face que proporciona APIs para trabajar con modelos basados en la arquitectura transformer, facilitando su uso en diversas aplicaciones.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["huggingface", "arquitectura-transformer", "codigo-abierto"],
+    tags: ["biblioteca", "desarrollo", "herramienta"]
+  },
+  {
+    id: "sora",
+    term: "Sora",
+    shortDefinition: "Modelo de OpenAI para generar videos realistas a partir de descripciones textuales.",
+    fullDefinition: "Modelo de inteligencia artificial desarrollado por OpenAI capaz de generar videos realistas y creativos a partir de descripciones textuales, representando un avance significativo en la generación de contenido multimodal.",
+    category: "modelos",
+    complexity: 3,
+    relatedTerms: ["openai", "modelo-multimodal", "texto-a-video"],
+    tags: ["video", "generación", "multimodal"]
+  },
+  {
+    id: "texto-a-video",
+    term: "Texto a Video",
+    shortDefinition: "Tecnología que genera contenido de video basado en descripciones textuales.",
+    fullDefinition: "Tecnología de IA que genera contenido de video basado en descripciones textuales, permitiendo crear secuencias animadas a partir de instrucciones en lenguaje natural.",
+    category: "tecnicas",
+    complexity: 3,
+    relatedTerms: ["sora", "generacion-condicionada", "modelo-multimodal"],
+    tags: ["generación", "video", "multimodal"]
+  },
+  {
+    id: "texto-a-imagen",
+    term: "Texto a Imagen",
+    shortDefinition: "Tecnología que genera imágenes basadas en descripciones textuales.",
+    fullDefinition: "Tecnología de IA que genera imágenes basadas en descripciones textuales, permitiendo crear representaciones visuales a partir de instrucciones en lenguaje natural.",
+    category: "tecnicas",
+    complexity: 2,
+    relatedTerms: ["dall-e", "stable-diffusion", "difusion"],
+    tags: ["generación", "imágenes", "multimodal"]
+  },
+  {
+    id: "imagen-latente",
+    term: "Imagen Latente",
+    shortDefinition: "Representación codificada de una imagen en el espacio latente de un modelo.",
+    fullDefinition: "Representación codificada de una imagen en el espacio latente de un modelo generativo, que captura características esenciales y puede ser manipulada para generar variaciones.",
+    category: "conceptos",
+    complexity: 3,
+    relatedTerms: ["espacio-latente", "difusion", "vae"],
+    tags: ["representación", "generación", "manipulación"]
   },
   {
     id: "token",
     term: "Token",
-    shortDefinition: "Unidad fundamental de texto (palabra, subpalabra, carácter) que procesa un modelo.",
-    fullDefinition: "La unidad atómica en la que un modelo de lenguaje divide el texto. Un token puede ser una palabra, una parte de una palabra (subpalabra) o incluso un solo carácter, dependiendo del método de tokenización utilizado.",
+    shortDefinition: "Unidad básica de procesamiento en modelos de lenguaje (palabra, subpalabra o carácter).",
+    fullDefinition: "Unidad básica de procesamiento en modelos de lenguaje, que puede ser una palabra completa, parte de una palabra o un carácter individual, dependiendo del esquema de tokenización utilizado.",
     category: "conceptos",
     complexity: 1,
-    relatedTerms: ["tokenizacion", "ventana-de-contexto"],
+    relatedTerms: ["tokenizacion", "ventana-de-contexto", "llm"],
     tags: ["nlp", "procesamiento", "unidad"]
+  },
+  {
+    id: "top-k",
+    term: "Top-k Sampling",
+    shortDefinition: "Técnica que limita la selección de tokens a los k más probables durante la generación.",
+    fullDefinition: "Técnica de muestreo que limita la selección del siguiente token a los k más probables durante la generación de texto, ayudando a controlar la calidad y relevancia del contenido generado.",
+    category: "tecnicas",
+    complexity: 2,
+    relatedTerms: ["sampling", "temperatura", "generacion-condicionada"],
+    tags: ["generación", "probabilidad", "control"]
   },
   {
     id: "regularizacion",
     term: "Regularización",
     shortDefinition: "Técnicas para prevenir el sobreajuste en modelos de aprendizaje automático.",
-    fullDefinition: "Conjunto de técnicas utilizadas durante el entrenamiento de modelos de aprendizaje automático para prevenir el sobreajuste (overfitting), mejorando así la capacidad del modelo para generalizar a datos no vistos. Ejemplos incluyen L1/L2 y weight decay.",
+    fullDefinition: "Conjunto de técnicas utilizadas durante el entrenamiento de modelos de aprendizaje automático para prevenir el sobreajuste y mejorar la generalización a datos nuevos.",
     category: "tecnicas",
     complexity: 2,
-    relatedTerms: ["overfitting", "weight-decay", "entrenamiento"],
-    tags: ["entrenamiento", "optimización"]
+    relatedTerms: ["overfitting", "weight-decay", "dropout"],
+    tags: ["entrenamiento", "generalización", "optimización"]
   },
   {
-    id: "top-k",
-    term: "Top-k Sampling",
-    shortDefinition: "Estrategia de muestreo que considera solo los k tokens más probables.",
-    fullDefinition: "Una estrategia de muestreo utilizada en la generación de texto donde, en cada paso, el modelo considera solo los 'k' tokens más probables y redistribuye la probabilidad entre ellos antes de seleccionar el siguiente token.",
+    id: "dropout",
+    term: "Dropout",
+    shortDefinition: "Técnica de regularización que desactiva aleatoriamente neuronas durante el entrenamiento.",
+    fullDefinition: "Técnica de regularización que desactiva aleatoriamente un porcentaje de neuronas durante cada paso de entrenamiento, forzando a la red a aprender representaciones más robustas y redundantes.",
     category: "tecnicas",
-    complexity: 3,
-    relatedTerms: ["sampling", "temperatura", "generacion-condicionada"],
-    tags: ["generación", "probabilidad", "muestreo"]
-  },
-  {
-    id: "gpu",
-    term: "GPU (Graphics Processing Unit)",
-    shortDefinition: "Procesador especializado crucial para acelerar el entrenamiento de modelos de IA.",
-    fullDefinition: "Unidad de Procesamiento Gráfico. Procesador especializado diseñado originalmente para gráficos por computadora, pero que es fundamental para acelerar las operaciones matemáticas paralelas requeridas en el entrenamiento y la inferencia de modelos de aprendizaje profundo.",
-    category: "conceptos",
-    complexity: 1,
-    relatedTerms: ["tensor-cores", "aprendizaje-profundo", "nvidia"],
-    tags: ["hardware", "aceleración"]
-  },
-  {
-    id: "nlp",
-    term: "NLP (Natural Language Processing)",
-    shortDefinition: "Campo de la IA enfocado en la interacción entre computadoras y lenguaje humano.",
-    fullDefinition: "Procesamiento del Lenguaje Natural. Campo de la inteligencia artificial y la lingüística computacional que se enfoca en la interacción entre las computadoras y el lenguaje humano, incluyendo la comprensión y generación de texto.",
-    category: "conceptos",
-    complexity: 1,
-    relatedTerms: ["llm", "bert", "tokenizacion"],
-    tags: ["ia", "lenguaje"]
-  },
-  {
-    id: "openai",
-    term: "OpenAI",
-    shortDefinition: "Laboratorio de investigación en IA que desarrolló GPT, DALL-E, ChatGPT, Sora y Whisper.",
-    fullDefinition: "Organización de investigación y desarrollo en inteligencia artificial, conocida por crear modelos influyentes como la serie GPT, DALL-E, ChatGPT, Sora y Whisper.",
-    category: "empresas",
-    complexity: 1,
-    relatedTerms: ["gpt", "chatgpt", "dall-e", "sora", "whisper"],
-    tags: ["empresa", "investigación"]
-  },
-  {
-    id: "google",
-    term: "Google",
-    shortDefinition: "Empresa tecnológica pionera en IA, desarrolladora de Transformer, BERT, Gemini y Bard.",
-    fullDefinition: "Gigante tecnológico que ha realizado contribuciones fundamentales a la IA, incluyendo la arquitectura Transformer, modelos como BERT y Gemini (sucesor de Bard), y la plataforma Google Cloud AI.",
-    category: "empresas",
-    complexity: 1,
-    relatedTerms: ["arquitectura-transformer", "bert", "gemini", "bard", "tensor-cores"],
-    tags: ["empresa", "investigación"]
-  },
-  {
-    id: "meta",
-    term: "Meta",
-    shortDefinition: "Empresa tecnológica (antes Facebook) que desarrolló la familia de modelos Llama.",
-    fullDefinition: "Empresa tecnológica anteriormente conocida como Facebook, que ha invertido significativamente en IA y ha lanzado modelos de lenguaje grandes de código abierto como la familia Llama.",
-    category: "empresas",
-    complexity: 1,
-    relatedTerms: ["llama", "llm", "código-abierto"],
-    tags: ["empresa", "investigación"]
-  },
-  {
-    id: "microsoft",
-    term: "Microsoft",
-    shortDefinition: "Empresa tecnológica con fuerte inversión en IA, asociada con OpenAI y desarrolladora de Copilot.",
-    fullDefinition: "Empresa tecnológica que integra fuertemente la IA en sus productos y servicios (Azure AI, Microsoft 365 Copilot), y tiene una asociación estratégica con OpenAI.",
-    category: "empresas",
-    complexity: 1,
-    relatedTerms: ["copilot", "openai", "azure"],
-    tags: ["empresa", "aplicaciones"]
-  },
-  {
-    id: "nvidia",
-    term: "NVIDIA",
-    shortDefinition: "Empresa líder en GPUs y hardware especializado para aceleración de IA.",
-    fullDefinition: "Empresa líder en el diseño y fabricación de Unidades de Procesamiento Gráfico (GPUs) y hardware especializado (como Tensor Cores) que son cruciales para el entrenamiento y la inferencia de modelos de IA a gran escala.",
-    category: "empresas",
-    complexity: 1,
-    relatedTerms: ["gpu", "tensor-cores", "hardware"],
-    tags: ["empresa", "hardware"]
+    complexity: 2,
+    relatedTerms: ["regularizacion", "overfitting", "red-neuronal"],
+    tags: ["entrenamiento", "regularización", "redes"]
   }
 ];
-
 const categories = [
   { id: "modelos", name: "Modelos", color: "var(--cat-modelos)", description: "Arquitecturas y tipos específicos de sistemas de IA generativa." },
   { id: "tecnicas", name: "Técnicas", color: "var(--cat-tecnicas)", description: "Métodos y procesos utilizados en el desarrollo y aplicación de la IA generativa." },
