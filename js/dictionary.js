@@ -1508,7 +1508,189 @@ const dictionaryData = [
     complexity: 2,
     relatedTerms: ["codigo", "optimizacion", "desarrollo-software"],
     tags: ["desarrollo", "optimización", "rendimiento"]
+  },
+   {
+    id: "zero-shot-chain-of-thought",
+    term: "Zero-Shot Chain of Thought",
+    shortDefinition: "Técnica que induce razonamiento paso a paso en LLMs sin ejemplos previos.",
+    fullDefinition: "Técnica avanzada de prompt engineering que induce a los modelos de lenguaje a generar cadenas de razonamiento paso a paso para resolver problemas complejos sin proporcionar ejemplos específicos, típicamente añadiendo frases como 'Pensemos paso a paso' a las instrucciones.",
+    category: "tecnicas",
+    complexity: 3,
+    relatedTerms: ["cadena-de-pensamientos", "zero-shot-learning", "prompt-engineering"],
+    tags: ["razonamiento", "prompting", "resolución de problemas"]
+  },
+  {
+    id: "zephyr",
+    term: "Zephyr",
+    shortDefinition: "Modelo de lenguaje de código abierto optimizado para seguir instrucciones.",
+    fullDefinition: "Modelo de lenguaje de código abierto desarrollado por Hugging Face, basado en la arquitectura Mistral y optimizado mediante técnicas de alineación para seguir instrucciones de manera precisa, destacando por su equilibrio entre rendimiento y tamaño compacto.",
+    category: "modelos",
+    complexity: 2,
+    relatedTerms: ["llm", "codigo-abierto", "alineacion-ia"],
+    tags: ["modelo", "instrucciones", "código abierto"]
+  },
+  {
+    id: "zapier",
+    term: "Zapier",
+    shortDefinition: "Plataforma de automatización que permite integrar IA con diversas aplicaciones.",
+    fullDefinition: "Plataforma de automatización sin código que permite conectar aplicaciones y servicios de IA con más de 5,000 herramientas diferentes, facilitando la creación de flujos de trabajo automatizados que pueden incorporar capacidades de inteligencia artificial en procesos empresariales.",
+    category: "aplicaciones",
+    complexity: 1,
+    relatedTerms: ["automatizacion", "integracion", "n8n"],
+    tags: ["automatización", "integración", "flujos de trabajo"]
+  },
+  {
+    id: "yolo",
+    term: "YOLO (You Only Look Once)",
+    shortDefinition: "Algoritmo de detección de objetos en tiempo real para visión por computadora.",
+    fullDefinition: "Sistema de detección de objetos en tiempo real basado en redes neuronales convolucionales que analiza imágenes en una sola pasada, permitiendo identificar múltiples objetos con alta velocidad y precisión, ampliamente utilizado en aplicaciones de visión por computadora e IA multimodal.",
+    category: "modelos",
+    complexity: 3,
+    relatedTerms: ["vision-computacional", "redes-neuronales", "opencv"],
+    tags: ["detección", "visión", "tiempo real"]
+  },
+  {
+    id: "yaml",
+    term: "YAML",
+    shortDefinition: "Formato de serialización de datos legible utilizado en configuración de sistemas de IA.",
+    fullDefinition: "Formato de serialización de datos diseñado para ser legible por humanos, frecuentemente utilizado para archivos de configuración en sistemas de IA, despliegue de modelos, definición de flujos de trabajo y especificación de parámetros en entornos de machine learning.",
+    category: "conceptos",
+    complexity: 1,
+    relatedTerms: ["json", "configuracion", "kubernet"],
+    tags: ["configuración", "datos", "serialización"]
+  },
+  {
+    id: "yield-optimization",
+    term: "Yield Optimization",
+    shortDefinition: "Técnicas para maximizar el rendimiento y eficiencia de modelos de IA.",
+    fullDefinition: "Conjunto de métodos y estrategias diseñadas para maximizar el rendimiento, eficiencia y retorno de inversión de modelos de IA en producción, incluyendo optimización de recursos computacionales, balanceo de carga, priorización de solicitudes y ajuste dinámico de parámetros.",
+    category: "tecnicas",
+    complexity: 3,
+    relatedTerms: ["optimizacion", "inferencia", "escalabilidad"],
+    tags: ["optimización", "rendimiento", "eficiencia"]
+  },
+  {
+    id: "xgboost",
+    term: "XGBoost",
+    shortDefinition: "Algoritmo de aprendizaje automático basado en árboles de decisión potenciados.",
+    fullDefinition: "Implementación eficiente y escalable del algoritmo de gradient boosting que utiliza árboles de decisión potenciados, ampliamente utilizado en competiciones de ciencia de datos y aplicaciones prácticas por su alto rendimiento predictivo y capacidad para manejar diversos tipos de datos.",
+    category: "modelos",
+    complexity: 3,
+    relatedTerms: ["aprendizaje-automatico", "arboles-decision", "gradient-boosting"],
+    tags: ["predicción", "clasificación", "regresión"]
+  },
+  {
+    id: "xml",
+    term: "XML",
+    shortDefinition: "Lenguaje de marcado utilizado para estructurar y transportar datos en sistemas de IA.",
+    fullDefinition: "Lenguaje de marcado extensible que define reglas para codificar documentos en un formato legible por máquinas y humanos, utilizado en sistemas de IA para intercambio de datos estructurados, configuración de servicios y representación de conocimiento en aplicaciones de procesamiento de lenguaje natural.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["json", "datos-estructurados", "intercambio-datos"],
+    tags: ["datos", "marcado", "estructura"]
+  },
+  {
+    id: "xai",
+    term: "XAI (Explainable AI)",
+    shortDefinition: "Enfoque para crear modelos de IA cuyas decisiones sean comprensibles para humanos.",
+    fullDefinition: "Campo de la inteligencia artificial centrado en desarrollar métodos y técnicas que permitan a los humanos entender, interpretar y confiar en las predicciones y comportamientos de los modelos de IA, especialmente importante en aplicaciones críticas como medicina, finanzas o sistemas judiciales.",
+    category: "conceptos",
+    complexity: 3,
+    relatedTerms: ["transparencia-ia", "interpretabilidad", "sesgo-algoritmo"],
+    tags: ["explicabilidad", "transparencia", "confianza"]
+  },
+   {
+    id: "nlp",
+    term: "NLP (Procesamiento de Lenguaje Natural)",
+    shortDefinition: "Campo de la IA enfocado en la interacción entre computadoras y lenguaje humano.",
+    fullDefinition: "Rama de la inteligencia artificial que se centra en la interacción entre las computadoras y el lenguaje humano, desarrollando métodos para procesar, analizar, comprender y generar texto en lenguaje natural, sirviendo como base fundamental para los modelos de lenguaje y aplicaciones conversacionales.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["llm", "bert", "gpt"],
+    tags: ["lenguaje", "procesamiento", "texto"]
+  },
+  {
+    id: "nerf",
+    term: "NeRF (Neural Radiance Fields)",
+    shortDefinition: "Técnica para crear representaciones 3D fotorrealistas a partir de imágenes 2D.",
+    fullDefinition: "Técnica de representación volumétrica que utiliza redes neuronales para sintetizar vistas fotorrealistas de escenas complejas en 3D a partir de un conjunto limitado de imágenes 2D, permitiendo la navegación fluida desde cualquier ángulo y la recreación de efectos de iluminación realistas.",
+    category: "tecnicas",
+    complexity: 3,
+    relatedTerms: ["vision-computacional", "redes-neuronales", "renderizado-3d"],
+    tags: ["3D", "renderizado", "visión"]
+  },
+  {
+    id: "nvidia",
+    term: "NVIDIA",
+    shortDefinition: "Empresa líder en hardware y software para IA, especializada en GPUs.",
+    fullDefinition: "Corporación tecnológica líder en el diseño de unidades de procesamiento gráfico (GPUs), plataformas de computación acelerada y software para inteligencia artificial, cuyas tecnologías son fundamentales para el entrenamiento e inferencia de modelos de aprendizaje profundo.",
+    category: "empresas",
+    complexity: 1,
+    relatedTerms: ["gpu", "cuda", "aceleracion-hardware"],
+    tags: ["hardware", "gpu", "aceleración"]
+  },
+  {
+    id: "neurona-artificial",
+    term: "Neurona Artificial",
+    shortDefinition: "Unidad computacional básica que forma las redes neuronales.",
+    fullDefinition: "Unidad computacional básica inspirada en las neuronas biológicas que constituye el elemento fundamental de las redes neuronales artificiales, recibiendo entradas, aplicando pesos, funciones de activación y produciendo salidas que se transmiten a otras neuronas.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["red-neuronal", "aprendizaje-profundo", "funcion-activacion"],
+    tags: ["redes", "computación", "estructura"]
+  },
+  {
+    id: "neo4j",
+    term: "Neo4j",
+    shortDefinition: "Base de datos orientada a grafos utilizada para representar relaciones complejas en IA.",
+    fullDefinition: "Sistema de gestión de bases de datos orientado a grafos, diseñado para almacenar y consultar datos interconectados, ampliamente utilizado en aplicaciones de IA para representar conocimiento, redes semánticas, sistemas de recomendación y análisis de relaciones complejas.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["base-datos-grafo", "representacion-conocimiento", "consulta-grafo"],
+    tags: ["grafos", "datos", "relaciones"]
+  },
+  {
+    id: "nlu",
+    term: "NLU (Comprensión del Lenguaje Natural)",
+    shortDefinition: "Subcampo del NLP enfocado en la comprensión del significado del texto.",
+    fullDefinition: "Subcampo del procesamiento de lenguaje natural que se centra específicamente en la comprensión del significado, intención y contexto del texto o habla humana, permitiendo a los sistemas de IA interpretar correctamente consultas, detectar sentimientos y extraer información semántica.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["nlp", "intent-recognition", "extraccion-entidades"],
+    tags: ["comprensión", "semántica", "interpretación"]
+  },
+  {
+    id: "nlg",
+    term: "NLG (Generación de Lenguaje Natural)",
+    shortDefinition: "Subcampo del NLP enfocado en la producción de texto coherente y contextual.",
+    fullDefinition: "Subcampo del procesamiento de lenguaje natural que se especializa en la producción automática de texto coherente, fluido y contextualmente apropiado en lenguaje humano, fundamental para chatbots, asistentes virtuales, resúmenes automáticos y creación de contenido.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["nlp", "gpt", "texto-generativo"],
+    tags: ["generación", "texto", "comunicación"]
+  },
+  {
+    id: "numpy",
+    term: "NumPy",
+    shortDefinition: "Biblioteca fundamental de Python para computación científica y manipulación de arrays.",
+    fullDefinition: "Biblioteca esencial de Python que proporciona soporte para arrays y matrices multidimensionales, junto con funciones matemáticas de alto nivel para operar con estos objetos, sirviendo como base para prácticamente todas las aplicaciones de ciencia de datos e inteligencia artificial en Python.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["python", "libreria", "computacion-cientifica"],
+    tags: ["arrays", "matemáticas", "computación"]
+  },
+  {
+    id: "nextjs",
+    term: "Next.js",
+    shortDefinition: "Framework de React para crear aplicaciones web con integración de IA.",
+    fullDefinition: "Framework de desarrollo web basado en React que facilita la creación de aplicaciones con renderizado del lado del servidor, generación estática y otras optimizaciones, ampliamente utilizado para construir interfaces de usuario para servicios y productos basados en IA.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["react", "desarrollo-web", "frontend"],
+    tags: ["web", "frontend", "desarrollo"]
   }
+  
+
 
 
 ];
