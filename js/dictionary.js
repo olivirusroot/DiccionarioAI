@@ -1268,7 +1268,248 @@ const dictionaryData = [
     complexity: 1,
     relatedTerms: ["deporte-acuatico", "vela", "surf"],
     tags: ["deporte", "agua", "viento"]
+  },
+    {
+    id: "tools",
+    term: "Tools",
+    shortDefinition: "Herramientas y utilidades que amplían las capacidades de los modelos de IA.",
+    fullDefinition: "Conjunto de aplicaciones, plugins o extensiones que permiten a los modelos de IA interactuar con sistemas externos, acceder a información actualizada o realizar acciones específicas, ampliando sus capacidades más allá del procesamiento de texto.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["llm", "api", "langchain"],
+    tags: ["integración", "funcionalidad", "extensión"]
+  },
+  {
+    id: "middleware",
+    term: "Middleware",
+    shortDefinition: "Software que actúa como intermediario entre sistemas o componentes de IA.",
+    fullDefinition: "Capa de software que funciona como puente entre diferentes sistemas, aplicaciones o componentes de IA, facilitando la comunicación, integración y gestión de datos entre ellos, así como implementando funciones de seguridad, monitoreo o transformación.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["api", "integracion", "proxy"],
+    tags: ["integración", "intermediario", "software"]
+  },
+  {
+    id: "firewall-de-prompts",
+    term: "Firewall de Prompts",
+    shortDefinition: "Sistema de seguridad que filtra y valida instrucciones enviadas a modelos de IA.",
+    fullDefinition: "Mecanismo de seguridad diseñado para analizar, filtrar y validar las instrucciones (prompts) enviadas a modelos de lenguaje, con el objetivo de prevenir ataques de inyección, evasión de restricciones o manipulación del comportamiento del modelo.",
+    category: "tecnicas",
+    complexity: 3,
+    relatedTerms: ["prompt-engineering", "seguridad-ia", "owasp-top-10-llm"],
+    tags: ["seguridad", "filtrado", "protección"]
+  },
+  {
+    id: "prompt-system",
+    term: "Prompt System",
+    shortDefinition: "Sistema estructurado para gestionar y optimizar instrucciones a modelos de IA.",
+    fullDefinition: "Marco de trabajo que permite diseñar, gestionar, versionar y optimizar de manera sistemática las instrucciones (prompts) enviadas a modelos de lenguaje, facilitando la consistencia, el mantenimiento y la mejora continua de las interacciones con la IA.",
+    category: "tecnicas",
+    complexity: 2,
+    relatedTerms: ["prompt-engineering", "in-context-learning", "firewall-de-prompts"],
+    tags: ["prompting", "gestión", "optimización"]
+  },
+  {
+    id: "owasp-top-10-llm",
+    term: "OWASP Top 10 LLM",
+    shortDefinition: "Lista de las diez vulnerabilidades de seguridad más críticas en aplicaciones basadas en LLMs.",
+    fullDefinition: "Documento de referencia desarrollado por la Open Web Application Security Project (OWASP) que identifica y describe las diez vulnerabilidades de seguridad más críticas y comunes en aplicaciones basadas en modelos de lenguaje grandes, proporcionando guías para su mitigación.",
+    category: "conceptos",
+    complexity: 3,
+    relatedTerms: ["seguridad-ia", "firewall-de-prompts", "hallucination"],
+    tags: ["seguridad", "vulnerabilidades", "mejores prácticas"]
+  },
+  {
+    id: "proxy",
+    term: "Proxy",
+    shortDefinition: "Intermediario que gestiona y controla las comunicaciones entre usuarios y modelos de IA.",
+    fullDefinition: "Componente de software que actúa como intermediario en las comunicaciones entre usuarios y modelos de IA, permitiendo implementar capas adicionales de seguridad, monitoreo, transformación de datos, balanceo de carga o enrutamiento entre diferentes modelos.",
+    category: "tecnicas",
+    complexity: 2,
+    relatedTerms: ["middleware", "api", "openrouter"],
+    tags: ["intermediario", "control", "comunicación"]
+  },
+  {
+    id: "ec2-de-amazon",
+    term: "EC2 de Amazon",
+    shortDefinition: "Servicio de computación en la nube de AWS para desplegar y ejecutar modelos de IA.",
+    fullDefinition: "Amazon Elastic Compute Cloud (EC2), servicio de computación en la nube de Amazon Web Services que proporciona capacidad informática redimensionable, utilizado frecuentemente para desplegar, entrenar y ejecutar modelos de inteligencia artificial y aplicaciones relacionadas.",
+    category: "empresas",
+    complexity: 2,
+    relatedTerms: ["amazon-bedrock", "infraestructura", "nube"],
+    tags: ["aws", "computación", "nube"]
+  },
+  {
+    id: "amazon-bedrock",
+    term: "Amazon Bedrock",
+    shortDefinition: "Servicio de AWS para acceder y personalizar modelos de IA de diferentes proveedores.",
+    fullDefinition: "Servicio gestionado de Amazon Web Services que proporciona acceso unificado a modelos fundacionales de IA de diferentes proveedores (como Anthropic, AI21 Labs, etc.), permitiendo su personalización, ajuste y despliegue seguro sin necesidad de gestionar infraestructura.",
+    category: "empresas",
+    complexity: 2,
+    relatedTerms: ["ec2-de-amazon", "llm", "fine-tuning"],
+    tags: ["aws", "modelos", "servicio"]
+  },
+  {
+    id: "azure",
+    term: "Azure",
+    shortDefinition: "Plataforma de computación en la nube de Microsoft con servicios especializados en IA.",
+    fullDefinition: "Plataforma de computación en la nube de Microsoft que ofrece una amplia gama de servicios, incluyendo soluciones especializadas en inteligencia artificial como Azure OpenAI Service, Azure Cognitive Services y Azure Machine Learning para el desarrollo, entrenamiento y despliegue de modelos de IA.",
+    category: "empresas",
+    complexity: 2,
+    relatedTerms: ["microsoft", "nube", "openai"],
+    tags: ["microsoft", "nube", "servicios"]
+  },
+  {
+    id: "gcp",
+    term: "GCP (Google Cloud Platform)",
+    shortDefinition: "Plataforma de computación en la nube de Google con servicios de IA avanzados.",
+    fullDefinition: "Google Cloud Platform, conjunto de servicios de computación en la nube ofrecidos por Google, que incluye herramientas especializadas para inteligencia artificial como Vertex AI, Cloud TPU y acceso a modelos como Gemini, facilitando el desarrollo, entrenamiento y despliegue de soluciones de IA.",
+    category: "empresas",
+    complexity: 2,
+    relatedTerms: ["google", "gemini", "nube"],
+    tags: ["google", "nube", "servicios"]
+  },
+  {
+    id: "docker",
+    term: "Docker",
+    shortDefinition: "Plataforma de contenedores para empaquetar y desplegar aplicaciones de IA.",
+    fullDefinition: "Plataforma de código abierto que utiliza virtualización a nivel de sistema operativo para entregar software en paquetes llamados contenedores, facilitando el despliegue consistente y portátil de aplicaciones de IA y sus dependencias en diferentes entornos.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["kubernet", "contenedores", "despliegue"],
+    tags: ["contenedores", "despliegue", "portabilidad"]
+  },
+  {
+    id: "kubernet",
+    term: "Kubernetes",
+    shortDefinition: "Sistema de orquestación de contenedores para gestionar aplicaciones de IA a gran escala.",
+    fullDefinition: "Plataforma de código abierto para la orquestación, automatización del despliegue, escalado y gestión de aplicaciones en contenedores, ampliamente utilizada para administrar servicios de IA en producción, garantizando alta disponibilidad y escalabilidad.",
+    category: "aplicaciones",
+    complexity: 3,
+    relatedTerms: ["docker", "contenedores", "escalabilidad"],
+    tags: ["orquestación", "escalabilidad", "contenedores"]
+  },
+  {
+    id: "http-request",
+    term: "HTTP Request",
+    shortDefinition: "Método de comunicación entre aplicaciones y APIs de modelos de IA.",
+    fullDefinition: "Mecanismo de comunicación basado en el protocolo HTTP que permite a las aplicaciones enviar solicitudes a APIs de modelos de IA, transmitiendo instrucciones, datos y parámetros, y recibiendo respuestas con los resultados generados por el modelo.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["api", "proxy", "integracion"],
+    tags: ["comunicación", "protocolo", "integración"]
+  },
+  {
+    id: "nodo-n8n",
+    term: "Nodo (en n8n)",
+    shortDefinition: "Componente funcional dentro de flujos de trabajo de automatización con IA.",
+    fullDefinition: "Elemento básico en la plataforma de automatización n8n que representa una acción, servicio o función específica, permitiendo crear flujos de trabajo que integran modelos de IA con otras aplicaciones y servicios mediante una interfaz visual.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["n8n", "automatizacion", "flujo-trabajo"],
+    tags: ["automatización", "componente", "integración"]
+  },
+  {
+    id: "pinoklio",
+    term: "Pinokio",
+    shortDefinition: "Herramienta para automatizar tareas y crear agentes de IA personalizados.",
+    fullDefinition: "Plataforma de automatización que permite crear y ejecutar agentes de IA personalizados capaces de interactuar con aplicaciones del sistema, navegar por la web y realizar tareas complejas, combinando modelos de lenguaje con capacidades de ejecución de código.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["agentes-ia", "automatizacion", "llm"],
+    tags: ["automatización", "agentes", "tareas"]
+  },
+  {
+    id: "llama-index",
+    term: "LlamaIndex",
+    shortDefinition: "Framework para conectar modelos de lenguaje con fuentes de datos externas.",
+    fullDefinition: "Framework de código abierto (anteriormente conocido como GPT Index) diseñado para facilitar la conexión entre modelos de lenguaje y fuentes de datos personalizadas, permitiendo la indexación, consulta y recuperación eficiente de información para mejorar las capacidades de los LLMs.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["rag", "langchain", "embedding"],
+    tags: ["indexación", "datos", "recuperación"]
+  },
+  {
+    id: "opencv",
+    term: "OpenCV",
+    shortDefinition: "Biblioteca de visión por computadora utilizada en aplicaciones de IA multimodal.",
+    fullDefinition: "Biblioteca de código abierto para visión por computadora y aprendizaje automático, que proporciona herramientas para el procesamiento y análisis de imágenes y videos, frecuentemente utilizada en combinación con modelos de IA para crear aplicaciones multimodales.",
+    category: "aplicaciones",
+    complexity: 3,
+    relatedTerms: ["vision-computacional", "modelo-multimodal", "libreria"],
+    tags: ["visión", "procesamiento", "imágenes"]
+  },
+  {
+    id: "open-source",
+    term: "Open Source",
+    shortDefinition: "Enfoque de desarrollo que permite acceso libre al código fuente de modelos y herramientas de IA.",
+    fullDefinition: "Filosofía y metodología de desarrollo que promueve el acceso libre al código fuente de software, incluyendo modelos y herramientas de IA, permitiendo su estudio, modificación, mejora y redistribución colaborativa, fomentando la transparencia y la innovación abierta.",
+    category: "conceptos",
+    complexity: 1,
+    relatedTerms: ["codigo-abierto", "llama-index", "ollama"],
+    tags: ["colaboración", "transparencia", "comunidad"]
+  },
+  {
+    id: "node-js",
+    term: "Node.js",
+    shortDefinition: "Entorno de ejecución para JavaScript utilizado en el desarrollo de aplicaciones de IA.",
+    fullDefinition: "Entorno de ejecución de JavaScript de código abierto, multiplataforma, que permite desarrollar aplicaciones del lado del servidor y herramientas de línea de comandos, ampliamente utilizado para crear interfaces, APIs y servicios que integran modelos de IA.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["javascript", "desarrollo-aplicaciones", "api"],
+    tags: ["desarrollo", "javascript", "backend"]
+  },
+  {
+    id: "python",
+    term: "Python",
+    shortDefinition: "Lenguaje de programación dominante en el desarrollo e implementación de IA.",
+    fullDefinition: "Lenguaje de programación interpretado, de alto nivel y propósito general, que se ha convertido en el estándar de facto para el desarrollo, entrenamiento e implementación de modelos de inteligencia artificial, gracias a su sintaxis clara y al amplio ecosistema de bibliotecas especializadas.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["libreria", "desarrollo-ia", "codigo"],
+    tags: ["programación", "desarrollo", "lenguaje"]
+  },
+  {
+    id: "libreria",
+    term: "Librería",
+    shortDefinition: "Conjunto de funciones y herramientas reutilizables para el desarrollo de aplicaciones de IA.",
+    fullDefinition: "Colección de código preescrito que proporciona funcionalidades específicas para el desarrollo de aplicaciones de IA, facilitando tareas como el procesamiento de datos, entrenamiento de modelos, visualización o integración con sistemas externos, sin necesidad de programar estas funciones desde cero.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["python", "opencv", "llama-index"],
+    tags: ["desarrollo", "código", "reutilización"]
+  },
+  {
+    id: "playwright",
+    term: "Playwright",
+    shortDefinition: "Framework para automatizar navegadores web en aplicaciones de IA.",
+    fullDefinition: "Framework de código abierto desarrollado por Microsoft que permite la automatización de navegadores web (Chromium, Firefox, WebKit), utilizado para crear agentes de IA capaces de interactuar con interfaces web, realizar pruebas automatizadas o extraer datos para entrenamiento.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["automatizacion", "web-scraping", "agentes-ia"],
+    tags: ["automatización", "navegador", "testing"]
+  },
+  {
+    id: "y-combinator",
+    term: "Y Combinator",
+    shortDefinition: "Aceleradora de startups que ha impulsado numerosas empresas de IA.",
+    fullDefinition: "Aceleradora de startups fundada en 2005 que ha desempeñado un papel crucial en el ecosistema de IA, proporcionando financiación inicial, mentoría y recursos a numerosas empresas innovadoras en el campo de la inteligencia artificial, como OpenAI en sus inicios.",
+    category: "empresas",
+    complexity: 1,
+    relatedTerms: ["openai", "startups", "innovacion"],
+    tags: ["inversión", "startups", "aceleradora"]
+  },
+  {
+    id: "compilar",
+    term: "Compilar",
+    shortDefinition: "Proceso de traducir código fuente a código ejecutable para aplicaciones de IA.",
+    fullDefinition: "Proceso mediante el cual el código fuente escrito en un lenguaje de programación de alto nivel se traduce a código máquina o bytecode que puede ser ejecutado directamente por un ordenador, fundamental para optimizar el rendimiento de aplicaciones de IA y modelos que requieren alta eficiencia computacional.",
+    category: "tecnicas",
+    complexity: 2,
+    relatedTerms: ["codigo", "optimizacion", "desarrollo-software"],
+    tags: ["desarrollo", "optimización", "rendimiento"]
   }
+
 
 ];
 const categories = [
