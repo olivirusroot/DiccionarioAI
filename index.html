@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diccionario de IA Generativa</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <div class="logo-icon"></div>
+        <h1 class="logo-text">Diccionario AI</h1>
+      </div>
+      
+      <div class="search-container">
+        <input type="text" id="search-input" class="search-input" placeholder="Buscar términos de IA generativa...">
+        <i class="fas fa-search search-icon"></i>
+      </div>
+      
+      <nav class="nav">
+        <button id="theme-toggle" class="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Filtros -->
+  <section class="filters">
+    <div class="container filters-content">
+      <div class="filter-group">
+        <span class="filter-label">Categoría:</span>
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="modelos">Modelos</button>
+        <button class="filter-btn" data-filter="tecnicas">Técnicas</button>
+        <button class="filter-btn" data-filter="conceptos">Conceptos</button>
+        <button class="filter-btn" data-filter="aplicaciones">Aplicaciones</button>
+        <button class="filter-btn" data-filter="empresas">Empresas</button>
+      </div>
+      
+      <div class="filter-group">
+        <span class="filter-label">Complejidad:</span>
+        <button class="filter-btn active" data-complexity="all">Todos</button>
+        <button class="filter-btn" data-complexity="1">Básico</button>
+        <button class="filter-btn" data-complexity="2">Intermedio</button>
+        <button class="filter-btn" data-complexity="3">Avanzado</button>
+      </div>
+      
+      <div class="filter-group">
+        <span class="filter-label">Ordenar:</span>
+        <button class="filter-btn active" data-sort="alphabetical">A-Z</button>
+        <button class="filter-btn" data-sort="complexity">Complejidad</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Índice alfabético -->
+  <section class="container">
+    <div class="alphabet-index" id="alphabet-index">
+      <!-- Se generará dinámicamente con JavaScript -->
+    </div>
+  </section>
+  
+  <!-- Contenido principal -->
+  <main class="container">
+    <div id="results-info" class="results-info">
+      <p>Mostrando <span id="results-count">0</span> términos</p>
+    </div>
+    
+    <div id="terms-grid" class="terms-grid">
+      <!-- Se generará dinámicamente con JavaScript -->
+      <div id="loader" class="loader">
+        <div class="loader-spinner"></div>
+      </div>
+    </div>
+    
+    <div id="no-results" class="no-results" style="display: none;">
+      <p>No se encontraron términos que coincidan con tu búsqueda.</p>
+      <button id="reset-filters" class="filter-btn">Restablecer filtros</button>
+    </div>
+  </main>
+  
+  <!-- Modal de detalle -->
+  <div id="term-modal" class="modal-overlay">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close">
+        <i class="fas fa-times"></i>
+      </button>
+      
+      <div class="modal-header">
+        <h2 id="modal-title" class="modal-title">Título del término</h2>
+        <div class="modal-meta">
+          <span id="modal-category" class="category-btn">Categoría</span>
+          <div class="complexity-indicator">
+            <div class="complexity-dot"></div>
+            <div class="complexity-dot"></div>
+            <div class="complexity-dot"></div>
+            <span id="modal-complexity" class="complexity-label">Complejidad</span>
+          </div>
+        </div>
+      </div>
+      
+      <div id="modal-definition" class="modal-definition">
+        Definición completa del término...
+      </div>
+      
+      <div id="related-terms" class="related-terms">
+        <h3 class="related-terms-title">Términos relacionados</h3>
+        <div id="related-terms-list" class="related-terms-list">
+          <!-- Se generará dinámicamente con JavaScript -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer simplificado -->
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p>Contacto: <a href="https://www.linkedin.com/in/richard-oliveros/" target="_blank">https://www.linkedin.com/in/richard-oliveros/</a></p>
+    </div>
+  </footer>
+  
+  <!-- Botón volver arriba -->
+  <button id="back-to-top" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  
+  <!-- Notificación -->
+  <div id="notification" class="notification">
+    <span id="notification-message">Mensaje de notificación</span>
+  </div>
+  
+  <!-- Scripts -->
+  <script src="js/dictionary.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
