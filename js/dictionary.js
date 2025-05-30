@@ -1682,17 +1682,13 @@ const dictionaryData = [
   {
     id: "nextjs",
     term: "Next.js",
-    shortDefinition: "Framework de React para crear aplicaciones web con integración de IA.",
-    fullDefinition: "Framework de desarrollo web basado en React que facilita la creación de aplicaciones con renderizado del lado del servidor, generación estática y otras optimizaciones, ampliamente utilizado para construir interfaces de usuario para servicios y productos basados en IA.",
+    shortDefinition: "Framework de React para crear aplicaciones web. con integración de IA.",
+    fullDefinition: "Framework de desarrollo web basado en React que facilita la creación de aplicaciones con renderizado del lado del servidor , generación estática y otras optimizaciones, ampliamente utilizado para construir interfaces de usuario para servicios y productos basados en IA.",
     category: "aplicaciones",
     complexity: 2,
     relatedTerms: ["react", "desarrollo-web", "frontend"],
     tags: ["web", "frontend", "desarrollo"]
   }
-  
-
-
-
 ];
 const categories = [
   { id: "modelos", name: "Modelos", color: "var(--cat-modelos)", description: "Arquitecturas y tipos específicos de sistemas de IA generativa." },
