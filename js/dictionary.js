@@ -908,7 +908,368 @@ const dictionaryData = [
     complexity: 2,
     relatedTerms: ["regularizacion", "overfitting", "red-neuronal"],
     tags: ["entrenamiento", "regularización", "redes"]
+  },
+    {
+    id: "veo3",
+    term: "VEO3",
+    shortDefinition: "Plataforma de inteligencia artificial para procesamiento y análisis de datos.",
+    fullDefinition: "Plataforma avanzada de inteligencia artificial diseñada para el procesamiento, análisis y visualización de grandes volúmenes de datos, con capacidades de integración con diversos sistemas y fuentes de información.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["ia-generativa", "procesamiento-datos"],
+    tags: ["plataforma", "análisis", "datos"]
+  },
+  {
+    id: "veo2",
+    term: "VEO2",
+    shortDefinition: "Versión anterior de la plataforma VEO para análisis de datos.",
+    fullDefinition: "Versión previa de la plataforma VEO que ofrece capacidades de análisis de datos e inteligencia artificial, con enfoque en la integración de sistemas y procesamiento de información estructurada.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["veo3", "procesamiento-datos"],
+    tags: ["plataforma", "análisis", "datos"]
+  },
+  {
+    id: "ollama",
+    term: "Ollama",
+    shortDefinition: "Herramienta para ejecutar modelos de lenguaje localmente.",
+    fullDefinition: "Herramienta de código abierto que permite ejecutar modelos de lenguaje de gran tamaño (LLMs) localmente en dispositivos personales, facilitando el acceso a capacidades de IA sin depender de servicios en la nube.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["llm", "inferencia-local"],
+    tags: ["local", "llm", "herramienta"]
+  },
+  {
+    id: "deepseek",
+    term: "DeepSeek",
+    shortDefinition: "Familia de modelos de lenguaje de código abierto con capacidades multimodales.",
+    fullDefinition: "Conjunto de modelos de lenguaje de código abierto desarrollados por DeepSeek AI, que ofrecen capacidades avanzadas de procesamiento de lenguaje natural y comprensión multimodal, incluyendo variantes especializadas para programación y tareas específicas.",
+    category: "modelos",
+    complexity: 3,
+    relatedTerms: ["llm", "codigo-abierto", "modelo-multimodal"],
+    tags: ["modelo", "código abierto", "multimodal"]
+  },
+  {
+    id: "perplexity",
+    term: "Perplexity",
+    shortDefinition: "Motor de búsqueda potenciado por IA con capacidades de respuesta y citación.",
+    fullDefinition: "Motor de búsqueda avanzado potenciado por inteligencia artificial que proporciona respuestas directas a consultas complejas, con capacidad para citar fuentes y ofrecer información actualizada mediante la integración de modelos de lenguaje con búsqueda en tiempo real.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["rag", "motor-busqueda", "llm"],
+    tags: ["búsqueda", "respuestas", "citación"]
+  },
+  {
+    id: "deepvoice",
+    term: "DeepVoice",
+    shortDefinition: "Tecnología de síntesis de voz basada en redes neuronales profundas.",
+    fullDefinition: "Sistema de síntesis de voz que utiliza redes neuronales profundas para generar voces humanas realistas, permitiendo la conversión de texto a voz con entonación natural y expresividad.",
+    category: "tecnicas",
+    complexity: 3,
+    relatedTerms: ["sintesis-voz", "redes-neuronales", "audio-generativo"],
+    tags: ["audio", "voz", "síntesis"]
+  },
+  {
+    id: "deepface",
+    term: "DeepFace",
+    shortDefinition: "Framework de reconocimiento facial basado en aprendizaje profundo.",
+    fullDefinition: "Framework de código abierto para reconocimiento facial que utiliza técnicas de aprendizaje profundo para detectar, analizar y verificar rostros en imágenes, con capacidades de identificación de emociones y atributos faciales.",
+    category: "aplicaciones",
+    complexity: 3,
+    relatedTerms: ["reconocimiento-facial", "vision-computacional", "aprendizaje-profundo"],
+    tags: ["facial", "reconocimiento", "visión"]
+  },
+  {
+    id: "whisper",
+    term: "Whisper",
+    shortDefinition: "Modelo de reconocimiento de voz multilingüe de OpenAI.",
+    fullDefinition: "Sistema de reconocimiento automático de voz desarrollado por OpenAI, capaz de transcribir y traducir audio en múltiples idiomas con alta precisión, incluso en condiciones acústicas desafiantes.",
+    category: "modelos",
+    complexity: 2,
+    relatedTerms: ["openai", "reconocimiento-voz", "transcripcion"],
+    tags: ["audio", "transcripción", "multilingüe"]
+  },
+  {
+    id: "google-notebooklm",
+    term: "Google NotebookLM",
+    shortDefinition: "Herramienta de Google que combina LLMs con documentos personales para crear asistentes personalizados.",
+    fullDefinition: "Aplicación experimental de Google que permite a los usuarios cargar documentos personales para crear asistentes de IA personalizados, facilitando la interacción con el contenido mediante preguntas y respuestas contextualizadas basadas en los documentos proporcionados.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["google", "rag", "asistente-ia"],
+    tags: ["google", "documentos", "personalización"]
+  },
+  {
+    id: "graficadora",
+    term: "Graficadora",
+    shortDefinition: "Herramienta para visualización de datos y creación de gráficos.",
+    fullDefinition: "Software especializado en la visualización de datos y creación de gráficos interactivos, permitiendo representar información compleja de manera visual para facilitar su análisis e interpretación.",
+    category: "aplicaciones",
+    complexity: 1,
+    relatedTerms: ["visualizacion-datos", "analisis-datos"],
+    tags: ["visualización", "gráficos", "datos"]
+  },
+  {
+    id: "n8n",
+    term: "n8n",
+    shortDefinition: "Plataforma de automatización de flujos de trabajo de código abierto.",
+    fullDefinition: "Plataforma de automatización de flujos de trabajo de código abierto que permite conectar diferentes aplicaciones y servicios para crear procesos automatizados sin necesidad de programación avanzada, con una interfaz visual para diseñar los flujos.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["automatizacion", "integracion", "flujo-trabajo"],
+    tags: ["automatización", "workflow", "código abierto"]
+  },
+  {
+    id: "flowise",
+    term: "Flowise",
+    shortDefinition: "Plataforma de código abierto para crear aplicaciones con LangChain mediante interfaz visual.",
+    fullDefinition: "Herramienta de código abierto que proporciona una interfaz visual para construir aplicaciones basadas en LangChain, facilitando la creación de flujos de trabajo con modelos de lenguaje sin necesidad de escribir código.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["langchain", "llm", "automatizacion"],
+    tags: ["desarrollo", "visual", "langchain"]
+  },
+  {
+    id: "google-ai-studio",
+    term: "Google AI Studio",
+    shortDefinition: "Plataforma de Google para experimentar con modelos de IA y crear aplicaciones.",
+    fullDefinition: "Entorno de desarrollo web creado por Google que permite a desarrolladores experimentar con modelos de IA como Gemini, crear prompts, ajustar parámetros y desarrollar aplicaciones basadas en inteligencia artificial.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["google", "gemini", "desarrollo-ia"],
+    tags: ["google", "desarrollo", "experimentación"]
+  },
+  {
+    id: "grok",
+    term: "Grok",
+    shortDefinition: "Modelo de lenguaje conversacional desarrollado por xAI.",
+    fullDefinition: "Modelo de lenguaje conversacional desarrollado por xAI (empresa de Elon Musk), diseñado para proporcionar respuestas con un estilo más informal y humorístico, con acceso a información en tiempo real a través de navegación web.",
+    category: "modelos",
+    complexity: 3,
+    relatedTerms: ["llm", "xai", "modelo-conversacional"],
+    tags: ["xai", "conversacional", "tiempo real"]
+  },
+  {
+    id: "serpapi",
+    term: "SerpAPI",
+    shortDefinition: "API para extraer resultados de motores de búsqueda de manera estructurada.",
+    fullDefinition: "Servicio que proporciona una API para extraer resultados de motores de búsqueda como Google, Bing y otros, devolviendo datos estructurados que facilitan su procesamiento e integración en aplicaciones.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["api", "busqueda-web", "datos-estructurados"],
+    tags: ["búsqueda", "api", "extracción"]
+  },
+  {
+    id: "groq",
+    term: "Groq",
+    shortDefinition: "Plataforma de inferencia de IA optimizada para velocidad y eficiencia.",
+    fullDefinition: "Empresa y plataforma de inferencia de IA que utiliza hardware especializado (LPU - Language Processing Unit) para ejecutar modelos de lenguaje con velocidad excepcional, ofreciendo tiempos de respuesta significativamente más rápidos que otras soluciones.",
+    category: "empresas",
+    complexity: 3,
+    relatedTerms: ["inferencia", "llm", "aceleracion-hardware"],
+    tags: ["velocidad", "inferencia", "hardware"]
+  },
+  {
+    id: "openrouter",
+    term: "OpenRouter",
+    shortDefinition: "Servicio que proporciona acceso unificado a múltiples modelos de IA.",
+    fullDefinition: "Plataforma que ofrece una API unificada para acceder a diversos modelos de lenguaje de diferentes proveedores, simplificando la integración y permitiendo cambiar fácilmente entre modelos sin modificar el código de la aplicación.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["api", "llm", "integracion-modelos"],
+    tags: ["api", "integración", "múltiples modelos"]
+  },
+  {
+    id: "firecrawl",
+    term: "Firecrawl",
+    shortDefinition: "Herramienta de rastreo web para recopilación de datos estructurados.",
+    fullDefinition: "Herramienta especializada en rastreo web (web crawling) que permite recopilar datos estructurados de sitios web de manera eficiente, facilitando la creación de conjuntos de datos para entrenamiento o análisis.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["web-scraping", "datos-estructurados", "recopilacion-datos"],
+    tags: ["web", "datos", "rastreo"]
+  },
+  {
+    id: "napkin",
+    term: "Napkin",
+    shortDefinition: "Plataforma para crear aplicaciones de IA mediante instrucciones en lenguaje natural.",
+    fullDefinition: "Plataforma que permite a usuarios crear aplicaciones de IA simplemente describiendo lo que quieren en lenguaje natural, traduciendo estas descripciones en aplicaciones funcionales sin necesidad de programación tradicional.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["desarrollo-sin-codigo", "llm", "aplicaciones-ia"],
+    tags: ["desarrollo", "lenguaje natural", "sin código"]
+  },
+  {
+    id: "openwebui",
+    term: "OpenWebUI",
+    shortDefinition: "Interfaz web de código abierto para interactuar con modelos de IA locales.",
+    fullDefinition: "Interfaz web de código abierto diseñada para interactuar con modelos de lenguaje ejecutados localmente (como los de Ollama), proporcionando una experiencia similar a ChatGPT pero para modelos alojados en el propio dispositivo del usuario.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["ollama", "interfaz-usuario", "llm-local"],
+    tags: ["interfaz", "local", "código abierto"]
+  },
+  {
+    id: "qwen-2-5",
+    term: "Qwen 2.5",
+    shortDefinition: "Familia de modelos de lenguaje desarrollados por Alibaba.",
+    fullDefinition: "Serie de modelos de lenguaje de gran tamaño desarrollados por Alibaba Cloud, que incluye variantes de diferentes tamaños optimizadas para diversas tareas, con capacidades multilingües y multimodales avanzadas.",
+    category: "modelos",
+    complexity: 3,
+    relatedTerms: ["llm", "alibaba", "modelo-multimodal"],
+    tags: ["alibaba", "multilingüe", "multimodal"]
+  },
+  {
+    id: "sam-altman",
+    term: "Sam Altman",
+    shortDefinition: "CEO de OpenAI y figura influyente en el desarrollo de la IA.",
+    fullDefinition: "Director ejecutivo de OpenAI y figura prominente en el campo de la inteligencia artificial, conocido por liderar el desarrollo de modelos como GPT y por su visión sobre el impacto futuro de la IA en la sociedad.",
+    category: "empresas",
+    complexity: 1,
+    relatedTerms: ["openai", "gpt", "chatgpt"],
+    tags: ["openai", "liderazgo", "industria"]
+  },
+  {
+    id: "cuda",
+    term: "CUDA",
+    shortDefinition: "Plataforma de computación paralela de NVIDIA para procesamiento en GPUs.",
+    fullDefinition: "Plataforma de computación paralela y modelo de programación desarrollado por NVIDIA que permite utilizar las unidades de procesamiento gráfico (GPUs) para cálculos de propósito general, acelerando significativamente tareas como el entrenamiento de modelos de aprendizaje profundo.",
+    category: "tecnicas",
+    complexity: 3,
+    relatedTerms: ["gpu", "aceleracion-hardware", "entrenamiento-ia"],
+    tags: ["nvidia", "gpu", "computación paralela"]
+  },
+  {
+    id: "lora",
+    term: "LoRA (Low-Rank Adaptation)",
+    shortDefinition: "Técnica eficiente para ajustar modelos de lenguaje grandes.",
+    fullDefinition: "Método de adaptación de bajo rango que permite ajustar modelos de lenguaje grandes de manera eficiente, reduciendo significativamente los requisitos de memoria y computación al modificar solo un pequeño conjunto de parámetros.",
+    category: "tecnicas",
+    complexity: 3,
+    relatedTerms: ["fine-tuning", "llm", "parametros-eficientes"],
+    tags: ["ajuste", "eficiencia", "parámetros"]
+  },
+  {
+    id: "gpu",
+    term: "GPU (Unidad de Procesamiento Gráfico)",
+    shortDefinition: "Hardware especializado para procesamiento paralelo, crucial en IA.",
+    fullDefinition: "Unidad de procesamiento gráfico, componente de hardware especializado en realizar cálculos en paralelo, fundamental para el entrenamiento e inferencia de modelos de aprendizaje profundo debido a su capacidad para procesar grandes cantidades de datos simultáneamente.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["cuda", "entrenamiento-ia", "aceleracion-hardware"],
+    tags: ["hardware", "procesamiento", "paralelo"]
+  },
+  {
+    id: "gema-de-gemini",
+    term: "Gema de Gemini",
+    shortDefinition: "Versión compacta y eficiente del modelo Gemini de Google.",
+    fullDefinition: "Versión optimizada y más ligera del modelo Gemini de Google, diseñada para funcionar eficientemente en dispositivos con recursos limitados mientras mantiene un alto nivel de capacidad y rendimiento.",
+    category: "modelos",
+    complexity: 2,
+    relatedTerms: ["gemini", "google", "modelo-eficiente"],
+    tags: ["google", "eficiencia", "compacto"]
+  },
+  {
+    id: "github",
+    term: "GitHub",
+    shortDefinition: "Plataforma de desarrollo colaborativo y control de versiones basada en Git.",
+    fullDefinition: "Plataforma basada en la nube para desarrollo colaborativo de software que utiliza Git para control de versiones, permitiendo a desarrolladores almacenar, gestionar, rastrear y controlar cambios en su código, además de facilitar la colaboración en proyectos de código abierto y privados.",
+    category: "empresas",
+    complexity: 2,
+    relatedTerms: ["git", "desarrollo-colaborativo", "codigo-abierto"],
+    tags: ["desarrollo", "colaboración", "código"]
+  },
+  {
+    id: "supabase",
+    term: "Supabase",
+    shortDefinition: "Alternativa de código abierto a Firebase con base de datos PostgreSQL.",
+    fullDefinition: "Plataforma de desarrollo de código abierto que proporciona funcionalidades similares a Firebase, incluyendo base de datos PostgreSQL, autenticación, almacenamiento y funciones en tiempo real, permitiendo crear aplicaciones completas con infraestructura backend.",
+    category: "empresas",
+    complexity: 2,
+    relatedTerms: ["postgresql", "backend", "desarrollo-aplicaciones"],
+    tags: ["base de datos", "backend", "código abierto"]
+  },
+  {
+    id: "vector",
+    term: "Vector",
+    shortDefinition: "Estructura de datos que representa magnitudes con dirección en un espacio multidimensional.",
+    fullDefinition: "Estructura matemática y de datos que representa magnitudes con dirección en un espacio multidimensional, fundamental en IA para representar datos como embeddings, permitiendo operaciones como búsqueda de similitud y manipulación algebraica.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["embedding", "espacio-latente", "matriz"],
+    tags: ["matemáticas", "representación", "datos"]
+  },
+  {
+    id: "matriz",
+    term: "Matriz",
+    shortDefinition: "Arreglo bidimensional de números utilizado en álgebra lineal y procesamiento de datos.",
+    fullDefinition: "Estructura de datos bidimensional organizada en filas y columnas, fundamental en álgebra lineal y ampliamente utilizada en IA para representar datos, pesos de redes neuronales y transformaciones lineales.",
+    category: "conceptos",
+    complexity: 2,
+    relatedTerms: ["algebra-lineal", "vector", "tensor"],
+    tags: ["matemáticas", "álgebra", "datos"]
+  },
+  {
+    id: "cursor",
+    term: "Cursor",
+    shortDefinition: "IDE de programación potenciado por IA para desarrollo de software.",
+    fullDefinition: "Entorno de desarrollo integrado (IDE) potenciado por inteligencia artificial, diseñado para mejorar la productividad de los programadores mediante funciones como autocompletado avanzado, generación de código y asistencia contextual basada en modelos de lenguaje.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["ide", "desarrollo-software", "asistencia-codigo"],
+    tags: ["programación", "ide", "asistencia"]
+  },
+  {
+    id: "trae",
+    term: "Trae",
+    shortDefinition: "IDE de programación con capacidades de IA para asistencia en desarrollo.",
+    fullDefinition: "Entorno de desarrollo integrado que incorpora capacidades de inteligencia artificial para asistir a los desarrolladores en la escritura, depuración y optimización de código, ofreciendo sugerencias contextuales y automatización de tareas repetitivas.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["ide", "desarrollo-software", "asistencia-codigo"],
+    tags: ["programación", "ide", "asistencia"]
+  },
+  {
+    id: "copilot",
+    term: "Copilot",
+    shortDefinition: "Asistente de programación de GitHub basado en IA que sugiere código.",
+    fullDefinition: "Herramienta de asistencia de programación desarrollada por GitHub y OpenAI que utiliza modelos de lenguaje para sugerir código en tiempo real mientras el desarrollador escribe, capaz de generar funciones completas y bloques de código basados en comentarios y contexto.",
+    category: "aplicaciones",
+    complexity: 2,
+    relatedTerms: ["github", "openai", "codex", "asistencia-codigo"],
+    tags: ["programación", "asistencia", "generación de código"]
+  },
+  {
+    id: "json",
+    term: "JSON (JavaScript Object Notation)",
+    shortDefinition: "Formato ligero de intercambio de datos basado en la sintaxis de JavaScript.",
+    fullDefinition: "Formato de texto ligero para el intercambio de datos, basado en la sintaxis de objetos de JavaScript pero independiente del lenguaje, ampliamente utilizado en aplicaciones web y APIs para transmitir datos estructurados.",
+    category: "conceptos",
+    complexity: 1,
+    relatedTerms: ["api", "intercambio-datos", "javascript"],
+    tags: ["formato", "datos", "web"]
+  },
+  {
+    id: "codex-de-openai",
+    term: "Codex de OpenAI",
+    shortDefinition: "Modelo de IA especializado en generación y comprensión de código.",
+    fullDefinition: "Modelo de inteligencia artificial desarrollado por OpenAI, derivado de GPT y especializado en la comprensión y generación de código en múltiples lenguajes de programación, que sirve como base para herramientas como GitHub Copilot.",
+    category: "modelos",
+    complexity: 3,
+    relatedTerms: ["openai", "gpt", "copilot", "generacion-codigo"],
+    tags: ["código", "programación", "openai"]
+  },
+  {
+    id: "windsurf",
+    term: "Windsurf",
+    shortDefinition: "Deporte acuático que combina elementos de surf y vela.",
+    fullDefinition: "Deporte acuático que combina elementos del surf y la navegación a vela, donde el participante se desplaza sobre una tabla propulsada por el viento a través de una vela articulada, permitiendo realizar maniobras y saltos sobre el agua.",
+    category: "conceptos",
+    complexity: 1,
+    relatedTerms: ["deporte-acuatico", "vela", "surf"],
+    tags: ["deporte", "agua", "viento"]
   }
+
 ];
 const categories = [
   { id: "modelos", name: "Modelos", color: "var(--cat-modelos)", description: "Arquitecturas y tipos específicos de sistemas de IA generativa." },
